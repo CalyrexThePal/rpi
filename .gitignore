@@ -1,3 +1,12 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 # Compiled source #
 ###################
 *.com
@@ -44,3 +53,4 @@ Thumbs.db
 
 # this just a test
 *.txt
+
