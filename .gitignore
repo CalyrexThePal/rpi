@@ -37,10 +37,10 @@ ehthumbs.db
 Thumbs.db
 
 # Pictures and Graphs
-.csv
-.png
-.jpg
-.jpeg
+*.csv
+*.png
+*.jpg
+*.jpeg
 
 # this just a test
-.txt
+*.txt
