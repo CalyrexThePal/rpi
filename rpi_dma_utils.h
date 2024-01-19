@@ -16,13 +16,13 @@
 //
 
 // Location of peripheral registers in physical memory
-#define PHYS_REG_BASE   PI_01_REG_BASE
+#define PHYS_REG_BASE   PI_4_REG_BASE
 #define PI_01_REG_BASE  0x20000000  // Pi Zero or 1
 #define PI_23_REG_BASE  0x3F000000  // Pi 2 or 3
 #define PI_4_REG_BASE   0xFE000000  // Pi 4
 
-//#define CLOCK_HZ      250000000   // Pi 2 - 4
-#define CLOCK_HZ        400000000   // Pi Zero
+#define CLOCK_HZ      375000000   // Pi 4
+// #define CLOCK_HZ        400000000   // Pi Zero
 
 // Location of peripheral registers in bus memory
 #define BUS_REG_BASE    0x7E000000
@@ -106,8 +106,8 @@ typedef struct {
 } VC_MSG __attribute__ ((aligned (16)));
 
 // DMA channels and data requests
-#define DMA_CHAN_A      10
-#define DMA_CHAN_B      11
+#define DMA_CHAN_A      0 // 10
+#define DMA_CHAN_B      1 // 11 
 #define DMA_PWM_DREQ    5
 #define DMA_SPI_TX_DREQ 6
 #define DMA_SPI_RX_DREQ 7
